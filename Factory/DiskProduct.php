@@ -47,8 +47,8 @@ class DiskProduct implements ProductInterface
         $typeErrors = $Validator->name('type')->value($this->inputs['type'])->required()->getErrors();
         if(!empty($typeErrors)) $this->errors['type'] = $typeErrors;
 
-        $sizeErrors = $Validator->name('weight')->value($this->inputs['weight'])->required()->getErrors();
-        if(!empty($sizeErrors)) $this->errors['weight'] = $sizeErrors;
+        $sizeErrors = $Validator->name('size')->value($this->inputs['size'])->required()->getErrors();
+        if(!empty($sizeErrors)) $this->errors['size'] = $sizeErrors;
 
 
     }
